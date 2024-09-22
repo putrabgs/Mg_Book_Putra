@@ -1,5 +1,7 @@
 // ignore_for_file: dead_code, unused_local_variable, unnecessary_null_comparison
 
+import 'dart:math';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
@@ -49,7 +51,7 @@ class TechnicalTest {
       int output = 99999;
       // --- End of Answer ---
 
-      return output is int && output == 99999;
+      return output == 99999;
     },
     // Exercise 6
     () {
@@ -58,7 +60,7 @@ class TechnicalTest {
       int output = -12345;
       // --- End of Answer ---
 
-      return output is int && output == -12345;
+      return output == -12345;
     },
     // Exercise 7
     () {
@@ -67,7 +69,7 @@ class TechnicalTest {
       int output = 1000000;
       // --- End of Answer ---
 
-      return output is int && output == 1000000;
+      return output == 1000000;
     },
     // Exercise 8
     () {
@@ -76,7 +78,7 @@ class TechnicalTest {
       int output = -987654;
       // --- End of Answer ---
 
-      return output is int && output == -987654;
+      return output == -987654;
     },
     // Exercise 9
     () {
@@ -85,7 +87,7 @@ class TechnicalTest {
       int output = 888;
       // --- End of Answer ---
 
-      return output is int && output == 888;
+      return output == 888;
     },
     // Exercise 10
     () {
@@ -94,7 +96,7 @@ class TechnicalTest {
       int output = -555;
       // --- End of Answer ---
 
-      return output is int && output == -555;
+      return output == -555;
     },
     // Exercise 11
     () {
@@ -103,7 +105,7 @@ class TechnicalTest {
       double output = 3.14;
       // --- End of Answer ---
 
-      return output is double && output == 3.14;
+      return output == 3.14;
     },
     // Exercise 12
     () {
@@ -112,7 +114,7 @@ class TechnicalTest {
       double output = 2.71828;
       // --- End of Answer ---
 
-      return output is double && output == 2.71828;
+      return output == 2.71828;
     },
     // Exercise 13
     () {
@@ -121,7 +123,7 @@ class TechnicalTest {
       double output = -5.67;
       // --- End of Answer ---
 
-      return output is double && output == -5.67;
+      return output == -5.67;
     },
     // Exercise 14
     () {
@@ -130,7 +132,7 @@ class TechnicalTest {
       double output = 0.0;
       // --- End of Answer ---
 
-      return output is double && output == 0.0;
+      return output == 0.0;
     },
     // Exercise 15
     () {
@@ -139,7 +141,7 @@ class TechnicalTest {
       double output = 12345.6789;
       // --- End of Answer ---
 
-      return output is double && output == 12345.6789;
+      return output == 12345.6789;
     },
     // Exercise 16
     () {
@@ -148,7 +150,7 @@ class TechnicalTest {
       double output = 7.5;
       // --- End of Answer ---
 
-      return output is double && output == 7.5;
+      return output == 7.5;
     },
     // Exercise 17
     () {
@@ -157,7 +159,7 @@ class TechnicalTest {
       double output = -2.25;
       // --- End of Answer ---
 
-      return output is double && output == -2.25;
+      return output == -2.25;
     },
     // Exercise 18
     () {
@@ -166,7 +168,7 @@ class TechnicalTest {
       double output = 0.01;
       // --- End of Answer ---
 
-      return output is double && output == 0.01;
+      return output == 0.01;
     },
     // Exercise 19
     () {
@@ -175,7 +177,7 @@ class TechnicalTest {
       double output = 123.456;
       // --- End of Answer ---
 
-      return output is double && output == 123.456;
+      return output == 123.456;
     },
     // Exercise 20
     () {
@@ -184,7 +186,7 @@ class TechnicalTest {
       double output = -9876.54321;
       // --- End of Answer ---
 
-      return output is double && output == -9876.54321;
+      return output == -9876.54321;
     },
     // Exercise 21
     () {
@@ -193,7 +195,7 @@ class TechnicalTest {
       bool output = true;
       // --- End of Answer ---
 
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 22
     () {
@@ -202,7 +204,7 @@ class TechnicalTest {
       bool output = false;
       // --- End of Answer ---
 
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 23
     () {
@@ -211,7 +213,7 @@ class TechnicalTest {
       bool output = true;
       // --- End of Answer ---
 
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 24
     () {
@@ -220,7 +222,7 @@ class TechnicalTest {
       bool output = false;
       // --- End of Answer ---
 
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 25
     () {
@@ -229,7 +231,7 @@ class TechnicalTest {
       bool output = true;
       // --- End of Answer ---
 
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 26
     () {
@@ -238,7 +240,7 @@ class TechnicalTest {
       bool output = false;
       // --- End of Answer ---
 
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 27
     () {
@@ -247,7 +249,7 @@ class TechnicalTest {
       bool output = true;
       // --- End of Answer ---
 
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 28
     () {
@@ -256,7 +258,7 @@ class TechnicalTest {
       bool output = false;
       // --- End of Answer ---
 
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 29
     () {
@@ -265,7 +267,7 @@ class TechnicalTest {
       bool output = true;
       // --- End of Answer ---
 
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 30
     () {
@@ -274,7 +276,7 @@ class TechnicalTest {
       bool output = false;
       // --- End of Answer ---
 
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 31
     () {
@@ -283,7 +285,7 @@ class TechnicalTest {
       String output = "Hello, World!";
       // --- End of Answer ---
 
-      return output is String && output == "Hello, World!";
+      return output == "Hello, World!";
     },
     // Exercise 32
     () {
@@ -292,7 +294,7 @@ class TechnicalTest {
       String output = "Dart is fun!";
       // --- End of Answer ---
 
-      return output is String && output == "Dart is fun!";
+      return output == "Dart is fun!";
     },
     // Exercise 33
     () {
@@ -301,7 +303,7 @@ class TechnicalTest {
       String output = "12345";
       // --- End of Answer ---
 
-      return output is String && output == "12345";
+      return output == "12345";
     },
     // Exercise 34
     () {
@@ -310,7 +312,7 @@ class TechnicalTest {
       String output = "3.14159";
       // --- End of Answer ---
 
-      return output is String && output == "3.14159";
+      return output == "3.14159";
     },
     // Exercise 35
     () {
@@ -319,7 +321,7 @@ class TechnicalTest {
       String output = "true";
       // --- End of Answer ---
 
-      return output is String && output == "true";
+      return output == "true";
     },
     // Exercise 36
     () {
@@ -328,7 +330,7 @@ class TechnicalTest {
       String output = "false";
       // --- End of Answer ---
 
-      return output is String && output == "false";
+      return output == "false";
     },
     // Exercise 37
     () {
@@ -337,7 +339,7 @@ class TechnicalTest {
       String output = "Hello, Dart!";
       // --- End of Answer ---
 
-      return output is String && output == "Hello, Dart!";
+      return output == "Hello, Dart!";
     },
     // Exercise 38
     () {
@@ -346,7 +348,7 @@ class TechnicalTest {
       String output = "42";
       // --- End of Answer ---
 
-      return output is String && output == "42";
+      return output == "42";
     },
     // Exercise 39
     () {
@@ -355,7 +357,7 @@ class TechnicalTest {
       String output = "3.14";
       // --- End of Answer ---
 
-      return output is String && output == "3.14";
+      return output == "3.14";
     },
     // Exercise 40
     () {
@@ -364,7 +366,7 @@ class TechnicalTest {
       String output = "Hello, World!";
       // --- End of Answer ---
 
-      return output is String && output == "Hello, World!";
+      return output == "Hello, World!";
     },
     // Exercise 41
     () {
@@ -374,10 +376,7 @@ class TechnicalTest {
       DateTime output = new DateTime(2022, 1, 1);
       // --- End of Answer ---
 
-      return output is DateTime &&
-          output.year == 2022 &&
-          output.month == 1 &&
-          output.day == 1;
+      return output.year == 2022 && output.month == 1 && output.day == 1;
     },
     // Exercise 42
     () {
@@ -386,10 +385,7 @@ class TechnicalTest {
       DateTime output = new DateTime(2000, 12, 31);
       // --- End of Answer ---
 
-      return output is DateTime &&
-          output.year == 2000 &&
-          output.month == 12 &&
-          output.day == 31;
+      return output.year == 2000 && output.month == 12 && output.day == 31;
     },
     // Exercise 43
     () {
@@ -398,10 +394,7 @@ class TechnicalTest {
       DateTime output = new DateTime(1995, 9, 15);
       // --- End of Answer ---
 
-      return output is DateTime &&
-          output.year == 1995 &&
-          output.month == 9 &&
-          output.day == 15;
+      return output.year == 1995 && output.month == 9 && output.day == 15;
     },
     // Exercise 44
     () {
@@ -410,10 +403,7 @@ class TechnicalTest {
       DateTime output = new DateTime(2023, 5, 10);
       // --- End of Answer ---
 
-      return output is DateTime &&
-          output.year == 2023 &&
-          output.month == 5 &&
-          output.day == 10;
+      return output.year == 2023 && output.month == 5 && output.day == 10;
     },
     // Exercise 45
     () {
@@ -422,10 +412,7 @@ class TechnicalTest {
       DateTime output = new DateTime(2010, 11, 24);
       // --- End of Answer ---
 
-      return output is DateTime &&
-          output.year == 2010 &&
-          output.month == 11 &&
-          output.day == 24;
+      return output.year == 2010 && output.month == 11 && output.day == 24;
     },
     // Exercise 46
     () {
@@ -434,10 +421,7 @@ class TechnicalTest {
       List<int> output = [1, 2, 3, 4, 5];
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
-          output[0] == 1 &&
-          output[4] == 5;
+      return output.length == 5 && output[0] == 1 && output[4] == 5;
     },
     // Exercise 47
     () {
@@ -446,10 +430,7 @@ class TechnicalTest {
       List<int> output = [10, 20, 30, 40, 50];
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
-          output[0] == 10 &&
-          output[4] == 50;
+      return output.length == 5 && output[0] == 10 && output[4] == 50;
     },
     // Exercise 48
     () {
@@ -458,10 +439,7 @@ class TechnicalTest {
       List<int> output = [5, 4, 3, 2, 1];
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
-          output[0] == 5 &&
-          output[4] == 1;
+      return output.length == 5 && output[0] == 5 && output[4] == 1;
     },
     // Exercise 49
     () {
@@ -470,10 +448,7 @@ class TechnicalTest {
       List<int> output = [0, 2, 4, 6, 8];
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
-          output[0] == 0 &&
-          output[4] == 8;
+      return output.length == 5 && output[0] == 0 && output[4] == 8;
     },
     // Exercise 50
     () {
@@ -482,10 +457,7 @@ class TechnicalTest {
       List<int> output = [9, 7, 5, 3, 1];
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
-          output[0] == 9 &&
-          output[4] == 1;
+      return output.length == 5 && output[0] == 9 && output[4] == 1;
     },
     // Exercise 51
     () {
@@ -494,10 +466,7 @@ class TechnicalTest {
       List<double> output = [1.1, 2.2, 3.3, 4.4, 5.5];
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
-          output[0] == 1.1 &&
-          output[4] == 5.5;
+      return output.length == 5 && output[0] == 1.1 && output[4] == 5.5;
     },
     // Exercise 52
     () {
@@ -506,10 +475,7 @@ class TechnicalTest {
       List<double> output = [0.5, 1.5, 2.5, 3.5, 4.5];
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
-          output[0] == 0.5 &&
-          output[4] == 4.5;
+      return output.length == 5 && output[0] == 0.5 && output[4] == 4.5;
     },
     // Exercise 53
     () {
@@ -518,10 +484,7 @@ class TechnicalTest {
       List<double> output = [10.0, 20.0, 30.0, 40.0, 50.0];
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
-          output[0] == 10.0 &&
-          output[4] == 50.0;
+      return output.length == 5 && output[0] == 10.0 && output[4] == 50.0;
     },
     // Exercise 54
     () {
@@ -530,10 +493,7 @@ class TechnicalTest {
       List<String> output = ["apple", "banana", "cherry", "date", "fig"];
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
-          output[0] == "apple" &&
-          output[4] == "fig";
+      return output.length == 5 && output[0] == "apple" && output[4] == "fig";
     },
     // Exercise 55
     () {
@@ -542,8 +502,7 @@ class TechnicalTest {
       List<String> output = ["grape", "kiwi", "Lemon", "mango", "orange"];
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0] == "grape" &&
           output[4] == "orange";
     },
@@ -560,8 +519,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0] == "pear" &&
           output[4] == "tangerine";
     },
@@ -572,10 +530,7 @@ class TechnicalTest {
       List<bool> output = [true, false, true, false, true];
       // --- End of Answer ---
 
-      return output is List<bool> &&
-          output.length == 5 &&
-          output[0] == true &&
-          output[4] == true;
+      return output.length == 5 && output[0] == true && output[4] == true;
     },
     // Exercise 58
     () {
@@ -584,10 +539,7 @@ class TechnicalTest {
       List<bool> output = [false, true, false, true, false];
       // --- End of Answer ---
 
-      return output is List<bool> &&
-          output.length == 5 &&
-          output[0] == false &&
-          output[4] == false;
+      return output.length == 5 && output[0] == false && output[4] == false;
     },
     // Exercise 59
     () {
@@ -610,8 +562,7 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["name"] == "Alice" &&
           output[0]["age"] == 30 &&
           output[4]["name"] == "Eve" &&
@@ -637,8 +588,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["fruit"] == "apple" &&
           output[0]["color"] == "red" &&
           output[4]["fruit"] == "fig" &&
@@ -679,8 +629,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["name"] == "Alice" &&
           output[0]["scores"].length == 3 &&
           output[4]["name"] == "Eve" &&
@@ -721,8 +670,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["name"] == "Alice" &&
           output[0]["skills"].length == 3 &&
           output[4]["name"] == "Eve" &&
@@ -763,8 +711,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["name"] == "Alice" &&
           output[0]["courses"].length == 2 &&
           output[4]["name"] == "Eve" &&
@@ -805,8 +752,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["name"] == "Alice" &&
           output[0]["data"]["age"] == 30 &&
           output[0]["data"]["city"] == "New York" &&
@@ -853,8 +799,7 @@ class TechnicalTest {
       ];
       // --- End of Answer ---
 
-      return output is List<Map<String, dynamic>> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output[0]["name"] == "Alice" &&
           output[0]["details"]["age"] == 30 &&
           output[0]["details"]["city"] == "New York" &&
@@ -879,8 +824,7 @@ class TechnicalTest {
       };
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output["name"] == "Alice" &&
+      return output["name"] == "Alice" &&
           output["details"]["age"] == 30 &&
           output["details"]["city"] == "New York";
     },
@@ -901,8 +845,7 @@ class TechnicalTest {
       };
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output["name"] == "Bob" &&
+      return output["name"] == "Bob" &&
           output["details"]["age"] == 25 &&
           output["details"]["city"] == "Los Angeles";
     },
@@ -923,8 +866,7 @@ class TechnicalTest {
       };
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output["name"] == "Carol" &&
+      return output["name"] == "Carol" &&
           output["details"]["age"] == 35 &&
           output["details"]["city"] == "Chicago";
     },
@@ -945,8 +887,7 @@ class TechnicalTest {
       };
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output["name"] == "David" &&
+      return output["name"] == "David" &&
           output["details"]["age"] == 28 &&
           output["details"]["city"] == "Houston";
     },
@@ -967,8 +908,7 @@ class TechnicalTest {
       };
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output["name"] == "Eve" &&
+      return output["name"] == "Eve" &&
           output["details"]["age"] == 22 &&
           output["details"]["city"] == "Miami";
     },
@@ -988,8 +928,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Alice" &&
+      return output[0]["name"] == "Alice" &&
           output[0]["age"] == 30 &&
           output[1]["name"] == "Bob" &&
           output[1]["age"] == 25 &&
@@ -1012,8 +951,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "David" &&
+      return output[0]["name"] == "David" &&
           output[0]["age"] == 28 &&
           output[1]["name"] == "Eve" &&
           output[1]["age"] == 22 &&
@@ -1035,8 +973,7 @@ class TechnicalTest {
         {"name": "Ivy", "age": 29}
       ];
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Grace" &&
+      return output[0]["name"] == "Grace" &&
           output[0]["age"] == 50 &&
           output[1]["name"] == "Hank" &&
           output[1]["age"] == 45 &&
@@ -1059,8 +996,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Jack" &&
+      return output[0]["name"] == "Jack" &&
           output[0]["age"] == 33 &&
           output[1]["name"] == "Kate" &&
           output[1]["age"] == 27 &&
@@ -1083,8 +1019,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Mia" &&
+      return output[0]["name"] == "Mia" &&
           output[0]["age"] == 24 &&
           output[1]["name"] == "Noah" &&
           output[1]["age"] == 29 &&
@@ -1107,8 +1042,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Peter" &&
+      return output[0]["name"] == "Peter" &&
           output[0]["age"] == 31 &&
           output[1]["name"] == "Queen" &&
           output[1]["age"] == 23 &&
@@ -1131,8 +1065,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Sam" &&
+      return output[0]["name"] == "Sam" &&
           output[0]["age"] == 27 &&
           output[1]["name"] == "Tom" &&
           output[1]["age"] == 32 &&
@@ -1155,8 +1088,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Victoria" &&
+      return output[0]["name"] == "Victoria" &&
           output[0]["age"] == 29 &&
           output[1]["name"] == "William" &&
           output[1]["age"] == 24 &&
@@ -1177,8 +1109,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output[0]["name"] == "Yara" &&
+      return output[0]["name"] == "Yara" &&
           output[0]["age"] == 28 &&
           output[1]["name"] == "Zane" &&
           output[1]["age"] == 31;
@@ -1245,8 +1176,7 @@ class TechnicalTest {
       ];
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 26 &&
+      return output.length == 26 &&
           output[2]["name"] == "Carol" &&
           output.last["age"] == 31;
     },
@@ -1261,7 +1191,7 @@ class TechnicalTest {
       int? output = int.parse(input);
 
       // --- End of Answer ---
-      return output is int && output == 42;
+      return output == 42;
     },
     // Exercise 82
     () {
@@ -1273,7 +1203,7 @@ class TechnicalTest {
       int? output = int.parse(input);
 
       // --- End of Answer ---
-      return output is int && output == 0;
+      return output == 0;
     },
     // Exercise 83
     () {
@@ -1285,7 +1215,7 @@ class TechnicalTest {
       int? output = int.parse(input);
 
       // --- End of Answer ---
-      return output is int && output == -99;
+      return output == -99;
     },
     // Exercise 84
     () {
@@ -1297,7 +1227,7 @@ class TechnicalTest {
       int? output = input.toInt();
 
       // --- End of Answer ---
-      return output is int && output == 3;
+      return output == 3;
     },
     // Exercise 85
     () {
@@ -1309,7 +1239,7 @@ class TechnicalTest {
       int? output = input.toInt();
 
       // --- End of Answer ---
-      return output is int && output == 9;
+      return output == 9;
     },
     // Exercise 86
     () {
@@ -1322,7 +1252,7 @@ class TechnicalTest {
       int? output = input.toInt();
 
       // --- End of Answer ---
-      return output is int && output == 5;
+      return output == 5;
     },
     // Exercise 87
     () {
@@ -1336,7 +1266,7 @@ class TechnicalTest {
       output = input ? 1 : 0;
 
       // --- End of Answer ---
-      return output is int && output == 1;
+      return output == 1;
     },
     // Exercise 88
     () {
@@ -1349,7 +1279,7 @@ class TechnicalTest {
       output = input ? 1 : 0;
 
       // --- End of Answer ---
-      return output is int && output == 0;
+      return output == 0;
     },
     // Exercise 89
     () {
@@ -1363,7 +1293,7 @@ class TechnicalTest {
       output = input ? 1 : 0;
 
       // --- End of Answer ---
-      return output is int && output == 1;
+      return output == 1;
     },
     // Exercise 90
     () {
@@ -1388,7 +1318,7 @@ class TechnicalTest {
       double output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 3.14;
+      return output == 3.14;
     },
     // Exercise 92
     () {
@@ -1400,7 +1330,7 @@ class TechnicalTest {
       double? output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 9.99;
+      return output == 9.99;
     },
     // Exercise 93
     () {
@@ -1412,7 +1342,7 @@ class TechnicalTest {
       double? output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 5.5;
+      return output == 5.5;
     },
     // Exercise 94
     () {
@@ -1424,7 +1354,7 @@ class TechnicalTest {
       bool? output = bool.parse(input);
 
       // --- End of Answer ---
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 95
     () {
@@ -1436,7 +1366,7 @@ class TechnicalTest {
       bool? output = bool.parse(input);
 
       // --- End of Answer ---
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 96
     () {
@@ -1449,7 +1379,7 @@ class TechnicalTest {
       output = input == "1";
 
       // --- End of Answer ---
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 97
     () {
@@ -1461,7 +1391,7 @@ class TechnicalTest {
       String? output;
       output = input;
       // --- End of Answer ---
-      return output is String && output == "Hello, World!";
+      return output == "Hello, World!";
     },
     // Exercise 98
     () {
@@ -1474,7 +1404,7 @@ class TechnicalTest {
       output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "2022";
+      return output == "2022";
     },
     // Exercise 99
     () {
@@ -1487,7 +1417,7 @@ class TechnicalTest {
       output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "3.14159";
+      return output == "3.14159";
     },
     // Exercise 100
     () {
@@ -1501,7 +1431,7 @@ class TechnicalTest {
       output = input.toIso8601String().substring(0, 10);
 
       // --- End of Answer ---
-      return output is String && output == "2023-08-09";
+      return output == "2023-08-09";
     },
     // Exercise 101
     () {
@@ -1514,7 +1444,7 @@ class TechnicalTest {
       bool? output = input == "true";
 
       // --- End of Answer ---
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 102
     () {
@@ -1526,7 +1456,7 @@ class TechnicalTest {
       bool? output = bool.parse(input);
 
       // --- End of Answer ---
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 103
     () {
@@ -1539,7 +1469,7 @@ class TechnicalTest {
       output = input == "1";
 
       // --- End of Answer ---
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 104
     () {
@@ -1552,7 +1482,7 @@ class TechnicalTest {
       output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "true";
+      return output == "true";
     },
     // Exercise 105
     () {
@@ -1565,7 +1495,7 @@ class TechnicalTest {
       String? output;
       output = input.toString();
       // --- End of Answer ---
-      return output is String && output == "false";
+      return output == "false";
     },
     // Exercise 106
     () {
@@ -1579,7 +1509,7 @@ class TechnicalTest {
       output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "42";
+      return output == "42";
     },
     // Exercise 107
     () {
@@ -1592,7 +1522,7 @@ class TechnicalTest {
       String? output;
       output = input.toString();
       // --- End of Answer ---
-      return output is String && output == "3.14";
+      return output == "3.14";
     },
     // Exercise 108
     () {
@@ -1606,7 +1536,7 @@ class TechnicalTest {
       output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 9.99;
+      return output == 9.99;
     },
     // Exercise 109
     () {
@@ -1618,7 +1548,7 @@ class TechnicalTest {
       double? output;
       output = double.parse(input);
       // --- End of Answer ---
-      return output is double && output == 3.14;
+      return output == 3.14;
     },
     // Exercise 110
     () {
@@ -1631,7 +1561,7 @@ class TechnicalTest {
       double? output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 5.5;
+      return output == 5.5;
     },
     // Exercise 111
     () {
@@ -1644,7 +1574,7 @@ class TechnicalTest {
       bool? output = input == "true";
 
       // --- End of Answer ---
-      return output is bool && output == true;
+      return output == true;
     },
     // Exercise 112
     () {
@@ -1657,7 +1587,7 @@ class TechnicalTest {
       bool? output = input == "true";
 
       // --- End of Answer ---
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 113
     () {
@@ -1670,7 +1600,7 @@ class TechnicalTest {
       bool? output = input == "1";
 
       // --- End of Answer ---
-      return output is bool && output == false;
+      return output == false;
     },
     // Exercise 114
     () {
@@ -1683,7 +1613,7 @@ class TechnicalTest {
       String? output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "true";
+      return output == "true";
     },
     // Exercise 115
     () {
@@ -1696,7 +1626,7 @@ class TechnicalTest {
       String? output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "false";
+      return output == "false";
     },
     // Exercise 116
     () {
@@ -1709,7 +1639,7 @@ class TechnicalTest {
       String? output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "42";
+      return output == "42";
     },
     // Exercise 117
     () {
@@ -1722,7 +1652,7 @@ class TechnicalTest {
       String? output = input.toString();
 
       // --- End of Answer ---
-      return output is String && output == "3.14";
+      return output == "3.14";
     },
     // Exercise 118
     () {
@@ -1735,7 +1665,7 @@ class TechnicalTest {
       double? output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 9.99;
+      return output == 9.99;
     },
     // Exercise 119
     () {
@@ -1748,7 +1678,7 @@ class TechnicalTest {
       double? output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 3.14;
+      return output == 3.14;
     },
     // Exercise 120
     () {
@@ -1761,7 +1691,7 @@ class TechnicalTest {
       double? output = double.parse(input);
 
       // --- End of Answer ---
-      return output is double && output == 5.5;
+      return output == 5.5;
     },
     // Exercise 121
     () {
@@ -1775,10 +1705,7 @@ class TechnicalTest {
       output = DateTime.parse(input);
 
       // --- End of Answer ---
-      return output is DateTime &&
-          output.year == 2023 &&
-          output.month == 8 &&
-          output.day == 9;
+      return output.year == 2023 && output.month == 8 && output.day == 9;
     },
     // Exercise 122
     () {
@@ -1792,10 +1719,7 @@ class TechnicalTest {
       output = DateTime.parse(input);
 
       // --- End of Answer ---
-      return output is DateTime &&
-          output.year == 1999 &&
-          output.month == 12 &&
-          output.day == 31;
+      return output.year == 1999 && output.month == 12 && output.day == 31;
     },
     // Exercise 123
     () {
@@ -1809,10 +1733,7 @@ class TechnicalTest {
       output = DateTime.parse(input);
 
       // --- End of Answer ---
-      return output is DateTime &&
-          output.year == 2022 &&
-          output.month == 1 &&
-          output.day == 15;
+      return output.year == 2022 && output.month == 1 && output.day == 15;
     },
     // Exercise 124
     () {
@@ -1825,10 +1746,7 @@ class TechnicalTest {
       output = DateTime.parse(input);
 
       // --- End of Answer ---
-      return output is DateTime &&
-          output.year == 1987 &&
-          output.month == 5 &&
-          output.day == 25;
+      return output.year == 1987 && output.month == 5 && output.day == 25;
     },
     // Exercise 125
     () {
@@ -1842,10 +1760,7 @@ class TechnicalTest {
       output = DateTime.parse(input);
 
       // --- End of Answer ---
-      return output is DateTime &&
-          output.year == 2025 &&
-          output.month == 10 &&
-          output.day == 1;
+      return output.year == 2025 && output.month == 10 && output.day == 1;
     },
     // Exercise 126
     () {
@@ -1859,10 +1774,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<int> &&
-          output.length == 5 &&
-          output[0] == 1 &&
-          output[4] == 5;
+      return output.length == 5 && output[0] == 1 && output[4] == 5;
     },
     // Exercise 127
     () {
@@ -1876,8 +1788,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<String> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output[0] == "apple" &&
           output[2] == "cherry";
     },
@@ -1893,10 +1804,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<double> &&
-          output.length == 3 &&
-          output[0] == 3.14 &&
-          output[2] == 1.618;
+      return output.length == 3 && output[0] == 3.14 && output[2] == 1.618;
     },
     // Exercise 129
     () {
@@ -1910,8 +1818,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is Map<String, int> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["apple"] == 2 &&
           output["cherry"] == 5;
     },
@@ -1926,8 +1833,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is Map<String, double> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["pi"] == 3.14 &&
           output["phi"] == 1.618;
     },
@@ -1948,8 +1854,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["name"] == "John" &&
           output["isStudent"] == true;
     },
@@ -1969,8 +1874,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is Map<String, dynamic> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["title"] == "Book" &&
           output["price"] == 20.99;
     },
@@ -1990,8 +1894,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, int>> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output[0]["score"] == 90 &&
           output[2]["score"] == 95;
     },
@@ -2011,8 +1914,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output[0]["name"] == "Alice" &&
           output[2]["name"] == "Charlie";
     },
@@ -2030,8 +1932,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["city"] == "New York" &&
           output[1]["population"] == 3990456;
     },
@@ -2048,8 +1949,7 @@ class TechnicalTest {
       List<Map<String, dynamic>>? output;
       output = input;
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["name"] == "Alice" &&
           output[1]["age"] == 30;
     },
@@ -2067,8 +1967,7 @@ class TechnicalTest {
       List<Map<String, dynamic>>? output;
       output = input;
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["country"] == "USA" &&
           output[1]["capital"] == "Ottawa";
     },
@@ -2086,8 +1985,7 @@ class TechnicalTest {
       List<Map<String, dynamic>>? output;
       output = input;
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["code"] == "A1" &&
           output[1]["value"] == 20;
     },
@@ -2106,8 +2004,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["item"] == "Apple" &&
           output[1]["price"] == 0.99;
     },
@@ -2125,8 +2022,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["name"] == "Alice" &&
           output[1]["age"] == 30;
     },
@@ -2145,8 +2041,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["city"] == "New York" &&
           output[1]["population"] == 3990456;
     },
@@ -2165,8 +2060,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["country"] == "USA" &&
           output[1]["capital"] == "Ottawa";
     },
@@ -2185,8 +2079,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["code"] == "A1" &&
           output[1]["value"] == 20;
     },
@@ -2205,8 +2098,7 @@ class TechnicalTest {
       output = input;
 
       // --- End of Answer ---
-      return output is List<Map<String, dynamic>> &&
-          output.length == 2 &&
+      return output.length == 2 &&
           output[0]["item"] == "Apple" &&
           output[1]["price"] == 0.99;
     },
@@ -2306,8 +2198,7 @@ class TechnicalTest {
       output = input.split(',');
 
       // --- End of Answer ---
-      return output is List<String> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("orange");
@@ -2324,8 +2215,7 @@ class TechnicalTest {
       output = input.split(',').map(int.parse).toList();
 
       // --- End of Answer ---
-      return output is List<int> &&
-          output.length == 4 &&
+      return output.length == 4 &&
           output.contains(42) &&
           output.contains(38) &&
           output.contains(56) &&
@@ -2343,8 +2233,7 @@ class TechnicalTest {
       output = input.split(',').map(bool.parse).toList();
 
       // --- End of Answer ---
-      return output is List<bool> &&
-          output.length == 4 &&
+      return output.length == 4 &&
           output.contains(true) &&
           output.contains(false);
     },
@@ -2360,8 +2249,7 @@ class TechnicalTest {
       output = input.split(',').map(double.parse).toList();
 
       // --- End of Answer ---
-      return output is List<double> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output.contains(3.14) &&
           output.contains(2.718) &&
           output.contains(1.618);
@@ -2377,7 +2265,7 @@ class TechnicalTest {
       output = input.split(',').map(DateTime.parse).toList();
 
       // --- End of Answer ---
-      return output is List<DateTime> && output.length == 3;
+      return output.length == 3;
     },
     // Exercise 156
     () {
@@ -2407,7 +2295,7 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is double && output == 3.14;
+      return output == 3.14;
     },
     // Exercise 158
     () {
@@ -2422,7 +2310,7 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is bool && output;
+      return output;
     },
     // Exercise 159
     () {
@@ -2437,7 +2325,7 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is String && output == "42";
+      return output == "42";
     },
     // Exercise 160
     () {
@@ -2451,7 +2339,7 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is String && output == "3.14";
+      return output == "3.14";
     },
     // Exercise 161
     () {
@@ -2464,7 +2352,7 @@ class TechnicalTest {
       bool? output;
       output = input[2] == 3;
 
-      return output is bool && output;
+      return output;
     },
     // Exercise 162
     () {
@@ -2479,7 +2367,7 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is bool && !output;
+      return !output;
     },
     // Exercise 163
     () {
@@ -2488,10 +2376,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<String> dengan mengubah setiap elemen menjadi string
       // >>> Tulis jawabanmu di bawah ini
 
+      List<int> input = [10, 20, 30, 40, 50];
+
+      List<String>? output;
+      output = input.map((isi) => isi.toString()).toList();
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.every((element) => element is String);
+      return output.every((element) => element is String);
     },
     // Exercise 164
     () {
@@ -2502,10 +2394,11 @@ class TechnicalTest {
       Map<String, int> input = {"apple": 3, "banana": 2};
       List<String>? output;
 
+      output = input.keys.toList();
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.every((element) => element is String);
+      return output.every((element) => element is String);
     },
     // Exercise 165
     () {
@@ -2513,11 +2406,15 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel bool? output;
       // ? Instruksi: Konversi input menjadi List<int> dengan mengambil semua nilai (values) dari map
       // >>> Tulis jawabanmu di bawah ini
+      Map<int, String> input = {1: "one", 2: "two"};
+
+      List<String>? output;
 
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.every((element) => element is String);
+      output = input.values.toList();
+
+      return output.every((element) => element is String);
     },
     // Exercise 166
     () {
@@ -2526,9 +2423,18 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<int> dengan mengambil semua nilai dari map-map di dalam list
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      List<Map<String, int>> input = [
+        {"apple": 3},
+        {"banana": 2}
+      ];
 
-      return output is List<int> && output.every((element) => element is int);
+      List<int>? output;
+
+      // --- End of Answer ---
+      output =
+          input.map((isi) => isi.values).expand((values) => values).toList();
+
+      return output.every((element) => element is int);
     },
     // Exercise 167
     () {
@@ -2537,7 +2443,12 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<dynamic> dengan mengambil semua nilai dari map
       // >>> Tulis jawabanmu di bawah ini
 
+      Map<String, dynamic> input = {"age": 25, "name": "John"};
+
+      List<dynamic>? output;
+
       // --- End of Answer ---
+      output = input.values.toList();
 
       return output is List<dynamic>;
     },
@@ -2547,10 +2458,13 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel bool? output;
       // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengubah setiap elemen menjadi pasangan kunci "number" dan nilai elemen
       // >>> Tulis jawabanmu di bawah ini
+      List<int> input = [1, 2, 3, 4, 5];
 
+      Map<String, int>? output;
       // --- End of Answer ---
+      output = {for (int i in input) "number": i};
 
-      return output is Map<String, int> && output.containsKey("number");
+      return output.containsKey("number");
     },
     // Exercise 169
     () {
@@ -2559,7 +2473,13 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi Map<String, String> dengan mengubah setiap elemen menjadi pasangan kunci dan nilai yang sama
       // >>> Tulis jawabanmu di bawah ini
 
+      List<String> input = ["apple", "banana", "cherry"];
+
+      Map<String, String>? output;
+
       // --- End of Answer ---
+
+      output = {for (String string in input) string: string};
 
       return output is Map<String, String>;
     },
@@ -2570,7 +2490,18 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengambil pasangan kunci "apple" dan nilai dari map pertama dalam list
       // >>> Tulis jawabanmu di bawah ini
 
+      List<Map<String, int>> input = [
+        {"apple": 3},
+        {"banana": 2}
+      ];
+
+      Map<String, int>? output;
+
       // --- End of Answer ---
+
+      if (input.isNotEmpty && input[0].containsKey("apple")) {
+        output = {"apple": input[0]["apple"]!};
+      }
 
       return output is Map<String, int> && output.containsKey("apple");
     },
@@ -2582,9 +2513,17 @@ class TechnicalTest {
       // ? Instruksi: Gabungkan input1 dan input2 menjadi satu string dan simpan dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input1 = "Hello";
+
+      String input2 = "world";
+
+      String? output;
+
       // --- End of Answer ---
 
-      return output is String && output == "Hello world";
+      output = input1 + " " + input2;
+
+      return output == "Hello world";
     },
     // Exercise 172
     () {
@@ -2597,7 +2536,9 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is String && output == "Hello, my name is Alice";
+      output = input.replaceAll("John", "Alice");
+
+      return output == "Hello, my name is Alice";
     },
     // Exercise 173
     () {
@@ -2605,12 +2546,15 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<String>? output;
       // ? Instruksi: Konversi input menjadi List<String> dengan memisahkan string berdasarkan koma (",")
       // >>> Tulis jawabanmu di bawah ini
+      String input = "apple,banana,cherry";
+
+      List<String>? output;
 
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 3 &&
-          output.every((element) => element is String);
+      output = input.split(",");
+
+      return output.length == 3 && output.every((element) => element is String);
     },
     // Exercise 174
     () {
@@ -2619,11 +2563,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<int> dengan mengubah setiap elemen menjadi integer
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "10,20,30,40,50";
+
+      List<int>? output;
+
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
-          output.every((element) => element is int);
+      output = input.split(",").map(int.parse).toList();
+
+      return output.length == 5 && output.every((element) => element is int);
     },
     // Exercise 175
     () {
@@ -2632,11 +2580,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<double> dengan mengubah setiap elemen menjadi double
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "1.5,2.5,3.5";
+
+      List<double>? output;
+
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 3 &&
-          output.every((element) => element is double);
+      output = input.split(",").map(double.parse).toList();
+
+      return output.length == 3 && output.every((element) => element is double);
     },
     // Exercise 176
     () {
@@ -2645,11 +2597,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<bool> dengan mengubah setiap elemen menjadi boolean
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "true,false,true";
+
+      List<bool>? output;
       // --- End of Answer ---
 
-      return output is List<bool> &&
-          output.length == 3 &&
-          output.every((element) => element is bool);
+      output = input.split(",").map(bool.parse).toList();
+
+      return output.length == 3 && output.every((element) => element is bool);
     },
     // Exercise 177
     () {
@@ -2658,10 +2613,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<DateTime> dengan mengubah setiap elemen menjadi DateTime
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "2022-08-01,2023-01-15,2021-05-10";
+      List<DateTime>? output;
+
       // --- End of Answer ---
 
-      return output is List<DateTime> &&
-          output.length == 3 &&
+      output = input.split(",").map(DateTime.parse).toList();
+
+      return output.length == 3 &&
           output.every((element) => element is DateTime);
     },
     // Exercise 178
@@ -2693,7 +2652,17 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi List<int> dengan mengambil nilai dari setiap map dalam list
       // >>> Tulis jawabanmu di bawah ini
 
+      List<Map<String, int>> input = [
+        {"apple": 3},
+        {"banana": 2},
+        {"cherry": 1}
+      ];
+
+      List<int>? output;
+
       // --- End of Answer ---
+
+      // output = input.asMap();
 
       return output is List<int> &&
           output.length == 3 &&
@@ -2708,9 +2677,13 @@ class TechnicalTest {
       // ? Instruksi: Ganti kata "world" menjadi "Dart" dalam input dan simpan dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "Hello, world!";
+
+      String? output;
       // --- End of Answer ---
 
-      return output is String && output == "Hello, Dart!";
+      output = input.replaceAll("world!", "Dart!");
+      return output == "Hello, Dart!";
     },
     // Exercise 182
     () {
@@ -2719,9 +2692,15 @@ class TechnicalTest {
       // ? Instruksi: Ganti semua kata "apple" menjadi "orange" dalam input dan simpan dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,apple,apple,cherry";
+
+      String? output;
+
       // --- End of Answer ---
 
-      return output is String && output == "orange,banana,orange,orange,cherry";
+      output = input.replaceAll("apple", "orange");
+
+      return output == "orange,banana,orange,orange,cherry";
     },
     // Exercise 183
     () {
@@ -2731,10 +2710,17 @@ class TechnicalTest {
       // ? Instruksi: Ganti semua angka yang habis dibagi 2 dengan nilai 0 dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "1,2,3,4,5";
+
+      List<int>? output;
+
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
+      output = input.split(',').map((e) => int.parse(e)).toList();
+
+      output = output.map((e) => e % 2 == 0 ? 0 : e).toList();
+
+      return output.length == 5 &&
           output.contains(0) &&
           !output.contains(2) &&
           !output.contains(4);
@@ -2746,10 +2732,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi pasangan kunci "fruit" dan panjang string dalam map output
       // >>> Tulis jawabanmu di bawah ini
 
+      List<String> input = ["apple", "banana", "cherry"];
+
+      Map<String, int>? output;
+
       // --- End of Answer ---
 
-      return output is Map<String, int> &&
-          output.length == 3 &&
+      output = {for (var fruit in input) fruit: fruit.length};
+
+      return output.length == 3 &&
           output["apple"] == 5 &&
           output["banana"] == 6 &&
           output["cherry"] == 6;
@@ -2761,10 +2752,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi pasangan kunci integer dan kuadrat dari elemen dalam map output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      List<int> input = [1, 2, 3, 4, 5];
 
-      return output is Map<int, int> &&
-          output.length == 5 &&
+      Map<int, int>? output;
+
+      // --- End of Answer ---
+      output = {for (var i in input) i: i * i};
+
+      return output.length == 5 &&
           output[1] == 1 &&
           output[2] == 4 &&
           output[3] == 9 &&
@@ -2778,10 +2773,13 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi map dengan pasangan kunci "length" dan panjang string sebagai nilai, lalu tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      List<String> input = ["apple", "banana", "cherry"];
+      List<Map<String, int>>? output;
 
-      return output is List<Map<String, int>> &&
-          output.length == 3 &&
+      // --- End of Answer ---
+      output = input.map((e) => {"length": e.length}).toList();
+
+      return output.length == 3 &&
           output[0]["length"] == 5 &&
           output[1]["length"] == 6 &&
           output[2]["length"] == 6;
@@ -2792,11 +2790,17 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<String>? output;
       // ? Instruksi: Konversi setiap elemen dalam input menjadi string "fruit" dalam list output
       // >>> Tulis jawabanmu di bawah ini
+      List<Map<String, dynamic>> input = [
+        {"fruit": "apple"},
+        {"fruit": "banana"},
+        {"fruit": "cherry"}
+      ];
+      List<String>? output;
 
       // --- End of Answer ---
+      output = input.map((e) => e["fruit"] as String).toList();
 
-      return output is List<String> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry");
@@ -2808,10 +2812,19 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi integer "amount" dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      List<Map<String, int>> input = [
+        {"amount": 5},
+        {"amount": 10},
+        {"amount": 3}
+      ];
+
+      List<int>? output;
+
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 3 &&
+      output = input.map((e) => e["amount"]!).toList();
+
+      return output.length == 3 &&
           output.contains(5) &&
           output.contains(10) &&
           output.contains(3);
@@ -2823,10 +2836,18 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi integer "value" dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      List<Map<String, dynamic>> input = [
+        {"value": 7},
+        {"value": 15},
+        {"value": 9}
+      ];
+      List<int>? output;
+
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 3 &&
+      output = input.map((e) => e["value"] as int).toList();
+
+      return output.length == 3 &&
           output.contains(7) &&
           output.contains(15) &&
           output.contains(9);
@@ -2838,10 +2859,13 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi integer dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      List<String> input = ["5", "10", "3"];
+      List<int>? output;
 
-      return output is List<int> &&
-          output.length == 3 &&
+      // --- End of Answer ---
+      output = input.map(int.parse).toList();
+
+      return output.length == 3 &&
           output.contains(5) &&
           output.contains(10) &&
           output.contains(3);
@@ -2853,10 +2877,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi integer dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "5,10,15,20,25";
+
+      List<int>? output;
+
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
+      output = input.split(',').map(int.parse).toList();
+
+      return output.length == 5 &&
           output.contains(5) &&
           output.contains(10) &&
           output.contains(15) &&
@@ -2875,8 +2904,9 @@ class TechnicalTest {
 
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
+      output = input.split(",").map(double.parse).toList();
+
+      return output.length == 5 &&
           output.contains(5.5) &&
           output.contains(10.5) &&
           output.contains(15.5) &&
@@ -2894,9 +2924,9 @@ class TechnicalTest {
       List<bool>? output;
 
       // --- End of Answer ---
+      output = input.split(",").map(bool.parse).toList();
 
-      return output is List<bool> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output.contains(true) &&
           output.contains(false);
     },
@@ -2907,10 +2937,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi string dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,apple,banana,apple";
+
+      List<String>? output;
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      output = input.split(",").map((e) => e.trim()).toList();
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana");
     },
@@ -2921,10 +2956,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi DateTime dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "2022-01-01,2023-02-02,2024-03-03";
+
+      List<DateTime>? output;
+
       // --- End of Answer ---
 
-      return output is List<DateTime> &&
-          output.length == 3 &&
+      output = input.split(",").map(DateTime.parse).toList();
+
+      return output.length == 3 &&
           output.contains(DateTime(2022, 1, 1)) &&
           output.contains(DateTime(2023, 2, 2)) &&
           output.contains(DateTime(2024, 3, 3));
@@ -2936,10 +2976,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi integer dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "1,2,3,4,5";
+
+      List<int>? output;
+
       // --- End of Answer ---
 
-      return output is List<int> &&
-          output.length == 5 &&
+      output = input.split(",").map(int.parse).toList();
+
+      return output.length == 5 &&
           output.contains(1) &&
           output.contains(2) &&
           output.contains(3) &&
@@ -2953,10 +2998,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi double dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "1.1,2.2,3.3,4.4,5.5";
+
+      List<double>? output;
+
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
+      output = input.split(",").map(double.parse).toList();
+
+      return output.length == 5 &&
           output.contains(1.1) &&
           output.contains(2.2) &&
           output.contains(3.3) &&
@@ -2970,10 +3020,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi boolean dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      String input = "true,false,true,false,true";
 
-      return output is List<bool> &&
-          output.length == 5 &&
+      List<bool>? output;
+
+      // --- End of Answer ---
+      output = input.split(",").map(bool.parse).toList();
+
+      return output.length == 5 &&
           output.contains(true) &&
           output.contains(false);
     },
@@ -2984,10 +3038,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi setiap elemen dalam input menjadi string dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,apple,banana,apple";
+
+      List<String>? output;
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      output = input.split(",").map((e) => e.trim()).toList();
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana");
     },
@@ -2997,11 +3056,15 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<DateTime>? output;
       // ? Instruksi: Konversi setiap elemen dalam input menjadi DateTime dan tambahkan dalam list output
       // >>> Tulis jawabanmu di bawah ini
+      String input = "2022-01-01,2023-02-02,2024-03-03";
+
+      List<DateTime>? output;
 
       // --- End of Answer ---
 
-      return output is List<DateTime> &&
-          output.length == 3 &&
+      output = input.split(",").map(DateTime.parse).toList();
+
+      return output.length == 3 &&
           output.contains(DateTime(2022, 1, 1)) &&
           output.contains(DateTime(2023, 2, 2)) &&
           output.contains(DateTime(2024, 3, 3));
@@ -3013,10 +3076,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,cherry,dates,elderberry";
+
+      List<String>? output;
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      output = input.split(",").map((e) => e.trim()).toList();
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry") &&
@@ -3030,10 +3098,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list double dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "1.1,2.2,3.3,4.4,5.5";
+
+      List<double>? output;
+
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
+      output = input.split(",").map(double.parse).toList();
+
+      return output.length == 5 &&
           output.contains(1.1) &&
           output.contains(2.2) &&
           output.contains(3.3) &&
@@ -3047,10 +3120,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list boolean dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "true,false,true,false,true";
+
+      List<bool>? output;
+
       // --- End of Answer ---
 
-      return output is List<bool> &&
-          output.length == 5 &&
+      output = input.split(",").map(bool.parse).toList();
+
+      return output.length == 5 &&
           output.contains(true) &&
           output.contains(false);
     },
@@ -3060,11 +3138,14 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<DateTime>? output;
       // ? Instruksi: Konversi input menjadi list DateTime dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
+      String input = "2022-01-01,2023-02-02,2024-03-03";
+
+      List<DateTime>? output;
 
       // --- End of Answer ---
+      output = input.split(",").map(DateTime.parse).toList();
 
-      return output is List<DateTime> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output.contains(DateTime(2022, 1, 1)) &&
           output.contains(DateTime(2023, 2, 2)) &&
           output.contains(DateTime(2024, 3, 3));
@@ -3076,10 +3157,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,cherry,dates,elderberry";
+      List<String>? output;
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      output = input.split(",").map((e) => e.trim()).toList();
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry") &&
@@ -3093,10 +3178,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,cherry,dates,elderberry";
+      List<String>? output;
+
       // --- End of Answer ---
 
-      return output is List<String> &&
-          output.length == 5 &&
+      output = input.split(",").map((e) => e.trim()).toList();
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry") &&
@@ -3110,10 +3199,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list double dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "1.1,2.2,3.3,4.4,5.5";
+
+      List<double>? output;
+
       // --- End of Answer ---
 
-      return output is List<double> &&
-          output.length == 5 &&
+      output = input.split(",").map(double.parse).toList();
+
+      return output.length == 5 &&
           output.contains(1.1) &&
           output.contains(2.2) &&
           output.contains(3.3) &&
@@ -3127,10 +3221,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list boolean dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "true,false,true,false,true";
+
+      List<bool>? output;
+
       // --- End of Answer ---
 
-      return output is List<bool> &&
-          output.length == 5 &&
+      output = input.split(",").map(bool.parse).toList();
+
+      return output.length == 5 &&
           output.contains(true) &&
           output.contains(false);
     },
@@ -3140,11 +3239,14 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<DateTime>? output;
       // ? Instruksi: Konversi input menjadi list DateTime dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
+      String input = "2022-01-01,2023-02-02,2024-03-03";
+
+      List<DateTime>? output;
 
       // --- End of Answer ---
+      output = input.split(",").map(DateTime.parse).toList();
 
-      return output is List<DateTime> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output.contains(DateTime(2022, 1, 1)) &&
           output.contains(DateTime(2023, 2, 2)) &&
           output.contains(DateTime(2024, 3, 3));
@@ -3156,10 +3258,13 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      String input = "apple,banana,cherry,dates,elderberry";
+      List<String>? output;
 
-      return output is List<String> &&
-          output.length == 5 &&
+      // --- End of Answer ---
+      output = input.split(",");
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry") &&
@@ -3172,11 +3277,13 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<String>? output;
       // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
+      String input = "apple,banana,cherry,dates,elderberry";
+      List<String>? output;
 
       // --- End of Answer ---
+      output = input.split(",");
 
-      return output is List<String> &&
-          output.length == 5 &&
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry") &&
@@ -3190,10 +3297,13 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list double dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      String input = "1.1,2.2,3.3,4.4,5.5";
+      List<double>? output;
 
-      return output is List<double> &&
-          output.length == 5 &&
+      // --- End of Answer ---
+      output = input.split(",").map(double.parse).toList();
+
+      return output.length == 5 &&
           output.contains(1.1) &&
           output.contains(2.2) &&
           output.contains(3.3) &&
@@ -3207,10 +3317,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list boolean dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "true,false,true,false,true";
+      List<bool>? output;
+
       // --- End of Answer ---
 
-      return output is List<bool> &&
-          output.length == 5 &&
+      output = input.split(",").map(bool.parse).toList();
+
+      return output.length == 5 &&
           output.contains(true) &&
           output.contains(false);
     },
@@ -3220,11 +3334,13 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel List<DateTime>? output;
       // ? Instruksi: Konversi input menjadi list DateTime dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
+      String input = "2022-01-01,2023-02-02,2024-03-03";
+      List<DateTime>? output;
 
       // --- End of Answer ---
+      output = input.split(",").map(DateTime.parse).toList();
 
-      return output is List<DateTime> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output.contains(DateTime(2022, 1, 1)) &&
           output.contains(DateTime(2023, 2, 2)) &&
           output.contains(DateTime(2024, 3, 3));
@@ -3236,10 +3352,13 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      String input = "apple,banana,cherry,dates,elderberry";
+      List<String>? output;
 
-      return output is List<String> &&
-          output.length == 5 &&
+      // --- End of Answer ---
+      output = input.split(",");
+
+      return output.length == 5 &&
           output.contains("apple") &&
           output.contains("banana") &&
           output.contains("cherry") &&
@@ -3253,10 +3372,14 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan kata dan values berdasarkan panjang kata, tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
-      // --- End of Answer ---
+      String input = "apple,banana,cherry,dates,elderberry";
 
-      return output is Map<String, int> &&
-          output.length == 5 &&
+      Map<String, int>? output;
+
+      // --- End of Answer ---
+      output = {for (var word in input.split(",")) word: word.length};
+
+      return output.length == 5 &&
           output["apple"] == 5 &&
           output["banana"] == 6 &&
           output["cherry"] == 6 &&
@@ -3268,12 +3391,17 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel String input dengan nilai "apple:100,banana:200,cherry:300"
       // ? Instruksi: Buatlah variabel Map<String, int>? output;
       // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan jumlahnya, tampung dalam variabel output
-      // >>> Tulis jawabanmu di bawah ini
+      // >>> Tulis jawabanmu di bawah iniString input = "apple:100,banana:200,cherry:300";
+      String input = "apple:100,banana:200,cherry:300";
+      Map<String, int>? output;
 
       // --- End of Answer ---
+      output = {
+        for (var item in input.split(','))
+          item.split(':')[0]: int.parse(item.split(':')[1])
+      };
 
-      return output is Map<String, int> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["apple"] == 100 &&
           output["banana"] == 200 &&
           output["cherry"] == 300;
@@ -3285,10 +3413,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan angka, tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple:1.1,banana:2.2,cherry:3.3";
+      Map<String, double>? output;
       // --- End of Answer ---
+      output = {
+        for (var fruit in input.split(","))
+          fruit.split(":")[0]: double.parse(fruit.split(":")[1])
+      };
 
-      return output is Map<String, double> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["apple"] == 1.1 &&
           output["banana"] == 2.2 &&
           output["cherry"] == 3.3;
@@ -3300,10 +3433,15 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan nilai boolean, tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple:true,banana:false,cherry:true";
+      Map<String, bool>? output;
       // --- End of Answer ---
+      output = {
+        for (var fruit in input.split(","))
+          fruit.split(":")[0]: bool.parse(fruit.split(":")[1])
+      };
 
-      return output is Map<String, bool> &&
-          output.length == 3 &&
+      return output.length == 3 &&
           output["apple"] == true &&
           output["banana"] == false &&
           output["cherry"] == true;
@@ -3314,11 +3452,17 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel Map<String, DateTime>? output;
       // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan tanggal, tampung dalam variabel output
       // >>> Tulis jawabanmu di bawah ini
+      String input = "apple:2022-01-01,banana:2023-02-02,cherry:2024-03-03";
+      Map<String, DateTime>? output;
 
       // --- End of Answer ---
 
-      return output is Map<String, DateTime> &&
-          output.length == 3 &&
+      output = {
+        for (var fruit in input.split(","))
+          fruit.split(":")[0]: DateTime.parse(fruit.split(":")[1])
+      };
+
+      return output.length == 3 &&
           output["apple"] == DateTime(2022, 1, 1) &&
           output["banana"] == DateTime(2023, 2, 2) &&
           output["cherry"] == DateTime(2024, 3, 3);
@@ -3440,6 +3584,13 @@ class TechnicalTest {
           [TIPS] Gunakan for untuk mendapatkan total.
           Gunakan numbers.length untuk mendapatkan panjang List
           */
+
+      for (int angka in numbers) {
+        total += angka;
+      }
+
+      average = total / numbers.length;
+
       return average.toStringAsFixed(2) == "57.43";
     },
 
@@ -3585,6 +3736,7 @@ class TechnicalTest {
       String input = "Dart";
       // Tuliskan kode untuk memverifikasi apakah input memiliki panjang lebih dari 3 karakter
       bool? output;
+      output = input.length > 3;
 
       return output == true;
     },
@@ -3594,6 +3746,7 @@ class TechnicalTest {
       String input = "Dart";
       // Tuliskan kode untuk memverifikasi apakah input memiliki panjang sama dengan 3 karakter
       bool? output;
+      output = input.length == 3;
 
       return output == false;
     },
@@ -3604,6 +3757,8 @@ class TechnicalTest {
       // Tuliskan kode untuk memverifikasi apakah input memiliki huruf pertama 'D'
       bool? output;
 
+      output = input[0] == "D";
+
       return output == true;
     },
 
@@ -3612,6 +3767,8 @@ class TechnicalTest {
       String input = "Dart";
       // Tuliskan kode untuk memverifikasi apakah input memiliki huruf terakhir 't'
       bool? output;
+
+      output = input[3] == "t";
 
       return output == true;
     },
@@ -3622,6 +3779,8 @@ class TechnicalTest {
       // Tuliskan kode untuk memverifikasi apakah input memiliki 5 digit
       bool? output;
 
+      output = (input >= 10000 && input <= 99999);
+
       return output == true;
     },
 
@@ -3630,6 +3789,8 @@ class TechnicalTest {
       int input = 12345;
       // Tuliskan kode untuk memverifikasi apakah input memiliki 4 digit
       bool? output;
+
+      output = (input >= 10000 && input <= 99999);
 
       return output == false;
     },
@@ -3667,6 +3828,8 @@ class TechnicalTest {
       // Tuliskan kode untuk mengubah input menjadi huruf kecil semua dan memisahkan kata dengan spasi menjadi underscore
       String? output = "";
 
+      output = input.toLowerCase();
+
       return output == "dart_is_awesome";
     },
 
@@ -3675,6 +3838,8 @@ class TechnicalTest {
       String input = "1234";
       // Tuliskan kode untuk memverifikasi apakah input adalah angka
       bool? output;
+
+      output = input == int;
 
       return output == true;
     },

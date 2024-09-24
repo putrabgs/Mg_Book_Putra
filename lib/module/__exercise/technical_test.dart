@@ -2630,7 +2630,12 @@ class TechnicalTest {
       // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengubah setiap elemen menjadi pasangan kunci "fruit" dan nilai 1
       // >>> Tulis jawabanmu di bawah ini
 
+      String input = "apple,banana,cherry";
+      Map<String, int>? output;
+
       // --- End of Answer ---
+      output = Map.fromIterable(input.split(','),
+          key: (item) => item, value: (item) => 1);
 
       return output is Map<String, int> && output.length == 3;
     },
@@ -2640,6 +2645,15 @@ class TechnicalTest {
       // ? Instruksi: Buatlah variabel Map<int, String>? output;
       // ? Instruksi: Konversi input menjadi Map<int, String> dengan mengubah setiap elemen menjadi pasangan kunci integer dan nilai "value"
       // >>> Tulis jawabanmu di bawah ini
+      String input = "10,20,30";
+      Map<int, String>? output;
+      
+
+    output = Map.fromIterable(
+    input.split(','),
+    key: (item) => int.parse(item),
+    value: (item) => "value"
+    );
 
       // --- End of Answer ---
 
@@ -2661,8 +2675,7 @@ class TechnicalTest {
       List<int>? output;
 
       // --- End of Answer ---
-
-      // output = input.asMap();
+      output = input.map((map) => map.values.first).toList();
 
       return output is List<int> &&
           output.length == 3 &&
@@ -3472,6 +3485,8 @@ class TechnicalTest {
       //Ubah tipe data variable dibawah ini menjadi String
       int price = 100;
 
+      price.toString();
+
       return price is String;
     },
 
@@ -3544,10 +3559,9 @@ class TechnicalTest {
       String value = "5000";
 
       // Uncomment kode dibawah, dan perbaiki agar tidak error
-      /*
-      value = price;
 
-      */
+      price = int.parse(value);
+
       return price == 5000;
     },
 
@@ -3602,8 +3616,11 @@ class TechnicalTest {
           [Tips] - Gunakan .sort, ambil minValue dari .first dan ambil maxValue
           dari .last
           */
-      int minValue = 0;
-      int maxValue = 0;
+
+      numbers.sort();
+
+      int minValue = numbers.first;
+      int maxValue = numbers.last;
 
       return minValue == 23 && maxValue == 109;
     },
@@ -3687,8 +3704,9 @@ class TechnicalTest {
     () {
       String input = "Hello";
       // Tuliskan kode untuk menambahkan " World!" pada input
-      String? output = "World";
-      input + output;
+      String? output;
+
+      output = input + " World!";
 
       return output == "Hello World!";
     },
@@ -3699,6 +3717,8 @@ class TechnicalTest {
       // Tuliskan kode untuk mengambil kata pertama dari input
       String? output = "";
 
+      output = input.substring(0, 5);
+
       return output == "Hello";
     },
 
@@ -3708,6 +3728,8 @@ class TechnicalTest {
       // Tuliskan kode untuk mengambil kata kedua dari input
       String? output = "";
 
+      output = input.substring(6);
+
       return output == "World!";
     },
 
@@ -3716,7 +3738,7 @@ class TechnicalTest {
       int input = 12345;
       // Tuliskan kode untuk memverifikasi apakah input adalah bilangan genap
       bool? output;
-      output = input % 2 == true;
+      output = input % 2 == 0;
 
       return output == false;
     },
@@ -3726,7 +3748,7 @@ class TechnicalTest {
       int input = 12345;
       // Tuliskan kode untuk memverifikasi apakah input adalah bilangan ganjil
       bool? output;
-      output = input % 2 == false;
+      output = input % 2 != 0;
 
       return output == true;
     },
@@ -3790,7 +3812,7 @@ class TechnicalTest {
       // Tuliskan kode untuk memverifikasi apakah input memiliki 4 digit
       bool? output;
 
-      output = (input >= 10000 && input <= 99999);
+      output = (input >= 1000 && input <= 9999);
 
       return output == false;
     },
@@ -3801,6 +3823,8 @@ class TechnicalTest {
       // Tuliskan kode untuk memverifikasi apakah input memiliki 2 digit setelah koma
       bool? output;
 
+      output = (input * 1000) % 1 == 0;
+
       return output == true;
     },
 
@@ -3809,6 +3833,8 @@ class TechnicalTest {
       double input = 123.45;
       // Tuliskan kode untuk memverifikasi apakah input memiliki 3 digit setelah koma
       bool? output;
+
+      output = (input * 1000) % 1 == 1;
 
       return output == false;
     },
@@ -3828,7 +3854,7 @@ class TechnicalTest {
       // Tuliskan kode untuk mengubah input menjadi huruf kecil semua dan memisahkan kata dengan spasi menjadi underscore
       String? output = "";
 
-      output = input.toLowerCase();
+      output = input.toLowerCase().replaceAll(' ', '_');
 
       return output == "dart_is_awesome";
     },
@@ -3839,7 +3865,7 @@ class TechnicalTest {
       // Tuliskan kode untuk memverifikasi apakah input adalah angka
       bool? output;
 
-      output = input == int;
+      output = output = int.tryParse(input) != null;
 
       return output == true;
     },
@@ -3850,7 +3876,7 @@ class TechnicalTest {
           "Dart is a client-optimized programming language for fast apps on multiple platforms.";
       // Tuliskan kode untuk membatasi jumlah karakter pada input menjadi 50 karakter
       String? output = "";
-      output = input.toString();
+      output = input.length > 50 ? input.substring(0, 50) : input;
 
       return output.length == 50;
     },

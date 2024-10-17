@@ -4438,7 +4438,7 @@ class TechnicalTest {
 
     // Exercise 306
     () {
-      String text = "Dart is awesome";
+      String text = "Dart is awesome ";
       // Implementasikan kode untuk mengambil 10 karakter pertama dari variable text.
       String? output = "";
       return output == "Dart is aw";
